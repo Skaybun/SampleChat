@@ -1,10 +1,7 @@
-//
-//  ChatViewController.swift
-//  Flash Chat iOS13
-//
-//  Created by Angela Yu on 21/10/2019.
-//  Copyright © 2019 Angela Yu. All rights reserved.
-//
+
+
+
+
 
 import UIKit
 import Firebase
@@ -14,9 +11,7 @@ class ChatViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var messageTextfield: UITextField!
     var messages: [Message] = []
-    //        [Message(sender: "1@2.com", body: "hey!"),
-    //        Message(sender: "a@b.com", body: "hello"),
-    //        Message(sender: "1@2.com", body: "whats ujbdvjhasvbdavsbdjba jabsjdçbçasb dabs sdjçba jbsd jas çjdajdjabsjdb  asjbsa dajb p?")]
+ 
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -85,7 +80,7 @@ class ChatViewController: UIViewController {
     
 }
 
-extension ChatViewController: UITableViewDataSource { // telling it how many cells it needs and which cells that put into the tableView.
+extension ChatViewController: UITableViewDataSource { 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return messages.count
     }
